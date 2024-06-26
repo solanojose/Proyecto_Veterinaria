@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F7F7;
+    max-width: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: #004AAD;
+    padding: 10px;
+}
+
+.ladoAzul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logoVet img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.Redes {
+    display: flex;
+    align-items: center;
+}
+
+.Redes img {
+    width: 35px;
+    margin: 0 5px;
+}
+
+.Numero {
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.Usuario {
+    width: 180px;
+}
+
+.opciones {
+    background-color: #57C8F4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+
+#check {
+    display: none;
+}
+
+.opciones a {
+    display: inline-block;
+    color: #004AAD;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.opciones a:hover {
+    transform: scale(1.1);
+    color: #FFF;
+    background-color: #004AAD;
+    border-radius: 20px;
+}
+
+.imgRegistro {
+    height: 15vw;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.imgRegistro img {
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    padding-right: 50px;
+}
+
+.registrate {
+    background: #3A80C1;
+    padding: 20px;
+}
+
+.registrate h1 {
+    text-align: center;
+    color: #FFFF;
+    font-size: 40px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 50px;
+}
+
+.formulario img {
+    width: 400px; 
+    margin-right: 70px; 
+}
+
+.formulario form {
+    width: 50%; 
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0);
+    padding: 50px ;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    width: 50%;
+    padding:  0 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;   
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+}
+
+.btnRegistrar {
+    margin-top: 20px;
+    width: 200px;
+    text-align: center; 
+}
+
+input[type="submit"] {
+    background-color: #3A80C1;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+input[type="submit"]:hover {
+    background-color: #57C8F4;
+}
+
+.pieDePagina {
+    background-image: url(img/PieDePagina.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    padding: 40px;
+    margin-top: 150px;
+}
+
+.logo {
+    width: 320px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.correo,
+.redes,
+.visitanos {
+    margin-bottom: 20px;
+}
+
+.visitanos h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 89px;
+}
+
+.correo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 127px;
+}
+
+.correo1,
+.correo2 {
+    margin-top: 7px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes img {
+    width: 40px;
+    margin: 0 35px;
+}
+
+.ubicacion {
+    margin-left: auto;
+    text-align: right;
+}
+
+.ubicacion iframe {
+    width: 300px;
+    height: 250px;
+}
+
+
+
+@media(max-width:768px) {
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .ladoAzul {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .Redes {
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    .Usuario {
+        width: 30vh;
+        margin-top: 15px;
+    }
+
+    .opciones {
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        background: #57C8F4;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .opciones a {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked~.opciones {
+        right: 0;
+    }
+
+
+
+    .imgRegistro {
+        height: 26vw;
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+
+    .imgRegistro img {
+        width: 50%;
+    }
+
+    .formulario {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .formulario img {
+        width: 300px; 
+        margin-right: 0; 
+    }
+
+    .formulario form {
+        width: 90%; 
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    
+    .pieDePagina {
+        background-image: url(img/PieDePagina.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFF;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    
+    .logo {
+        width: 220px;
+    }
+    
+    .informacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 50px; 
+    }
+
+    .correo h1{
+        margin-right: 150px;
+    }
+    
+    .visitanos {
+        margin-top: 50px;
+    }
+    
+    .redes {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .redes img {
+        width: 30px;
+        margin: 0 10px;
+    }
+    
+    .ubicacion {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .ubicacion iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+}

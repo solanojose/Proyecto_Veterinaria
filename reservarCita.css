@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F7F7;
+    max-width: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: #004AAD;
+    padding: 10px;
+}
+
+.ladoAzul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logoVet img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.Redes {
+    display: flex;
+    align-items: center;
+}
+
+.Redes img {
+    width: 35px;
+    margin: 0 5px;
+}
+
+.Numero {
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.Usuario {
+    width: 180px;
+}
+
+.opciones {
+    background-color: #57C8F4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+
+#check {
+    display: none;
+}
+
+.opciones a {
+    display: inline-block;
+    color: #004AAD;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.opciones a:hover {
+    transform: scale(1.1);
+    color: #FFF;
+    background-color: #004AAD;
+    border-radius: 20px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.agendaTuCita {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.agendaTuCita h1 {
+    font-size: 45px;
+}
+
+form {
+    background: none;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0);
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="date"],
+input[type="submit"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+input[type="submit"] {
+    background-color: #3A80C1;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+input[type="submit"]:hover {
+    background-color: #57C8F4;
+}
+
+.fila {
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.fila:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nombre {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+
+.btnReservar {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.pieDePagina {
+    background-image: url(img/PieDePagina.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.logo {
+    width: 320px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.correo,
+.redes,
+.visitanos {
+    margin-bottom: 20px;
+}
+
+.visitanos h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 89px;
+}
+
+.correo h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 127px;
+}
+
+.correo1,
+.correo2 {
+    margin-top: 7px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes img {
+    width: 40px;
+    margin: 0 35px;
+}
+
+.ubicacion {
+    margin-left: auto;
+    text-align: right;
+}
+
+.ubicacion iframe {
+    width: 300px;
+    height: 250px;
+}
+
+
+
+/*RESPONSIVE*/
+@media(max-width:768px) {
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .ladoAzul {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .Redes {
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    .Usuario {
+        width: 30vh;
+        margin-top: 15px;
+    }
+
+    .opciones {
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        background: #57C8F4;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .opciones a {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked~.opciones {
+        right: 0;
+    }
+
+    .agendaTuCita h1 {
+        font-size: 35px;
+    }
+
+    form {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .fila {
+        margin-left: 0; 
+    }
+
+    .nombre {
+        width: 100%; 
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+        width: 100%; 
+    }
+
+    .pieDePagina {
+        background-image: url(img/PieDePagina.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFF;
+        padding: 20px;
+    }
+    
+    .logo {
+        width: 220px;
+    }
+    
+    .informacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 50px; 
+    }
+
+    .correo h1{
+        margin-right: 150px;
+    }
+    
+    .visitanos {
+        margin-top: 50px;
+    }
+    
+    .redes {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .redes img {
+        width: 30px;
+        margin: 0 10px;
+    }
+    
+    .ubicacion {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .ubicacion iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
